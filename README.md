@@ -11,7 +11,6 @@ and greatest or an alternate version if needed.
 
 Examples
 --------------------------------------
-Jython script examples for use in Silver Fabric Component and Enablers can be found in the [wiki](https://github.com/fabrician/jython-scripting-engine/wiki).
 
 Installation
 --------------------------------------
@@ -25,8 +24,10 @@ following:
 If successful, the grid library will be created and uploaded to a running Broker.
 
 
-Example
+Examples
 --------------------------------------
+Jython script examples for use in Silver Fabric Component and Enablers can be found in the [wiki](https://github.com/fabrician/jython-scripting-engine/wiki).
+
 To use Jython for a Silver Fabric, make sure your "language" and "languageVersion" 
 properties in the domain.xml or container.xml correspond the library you built:
 
@@ -37,27 +38,3 @@ properties in the domain.xml or container.xml correspond the library you built:
         <property name="languageVersion" value="2.5"/>
     </script>
 ```
-    
-An example enabler script (referenced as "enabler.py" in the XML above) in Jython might look 
-like the following:
-
-```python
-from java.lang import Class
-from java.lang import System
-from jarray import array
-
-from com.datasynapse.fabric.admin.info import GridlibInfo
-
-def getDynamicGridlibDependencies():
-    logger.info("Adding Default Domain Type dependency")
-    defaultDomainGridlib = GridlibInfo()
-    defaultDomainGridlib.name = "default-domain-type"
-    
-    logger.info("Adding HSQLDB distribution dependency")
-    hsqlGridlib = GridlibInfo()
-    hsqlGridlib.name = "hsqldb1_8-distribution"
-    hsqlGridlib.version = "1.0"
-    
-    return array([hsqlGridlib, defaultDomainGridlib], GridlibInfo)
-```    
-NOTE: this is not a complete Enabler implementation and only serves as an example guide to get started. Consult the Silver Fabric documentation for more information.
