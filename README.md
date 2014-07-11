@@ -9,8 +9,6 @@ This project builds a Jython grid library for use in creating Silver Fabric Enab
 Silver Fabric Broker already contains a version of Jython but this project provides a way to get the latest
 and greatest or an alternate version if needed.
 
-Examples
---------------------------------------
 
 Installation
 --------------------------------------
