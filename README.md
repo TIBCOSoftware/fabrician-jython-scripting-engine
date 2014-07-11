@@ -11,7 +11,7 @@ and greatest or an alternate version if needed.
 
 Examples
 --------------------------------------
-Jython script examples for use in Silver Fabric Component and Enablers can be found in the [wiki|https://github.com/fabrician/jython-scripting-engine/wiki].
+Jython script examples for use in Silver Fabric Component and Enablers can be found in the [wiki](https://github.com/fabrician/jython-scripting-engine/wiki).
 
 Installation
 --------------------------------------
